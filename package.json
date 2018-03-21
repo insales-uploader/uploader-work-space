@@ -1,0 +1,27 @@
+{
+  "name": "uploader-work-space",
+  "version": "1.0.0",
+  "description": "",
+  "main": "insales-config.js",
+  "dependencies": {
+    "deepmix": "^1.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-csstree": "^1.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jsvalidate": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirIvanin/uploader-work-space.git"
+  },
+  "author": "Ivanin Vladimir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VladimirIvanin/uploader-work-space/issues"
+  },
+  "homepage": "https://github.com/VladimirIvanin/uploader-work-space#readme"
+}
