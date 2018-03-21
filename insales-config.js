@@ -1,4 +1,5 @@
 var extend = require('deepmix')
+var fs = require('fs')
 var imagemin = require('gulp-imagemin')
 var autoprefixer = require('gulp-autoprefixer')
 var jsValidate = require('gulp-jsvalidate');
@@ -8,6 +9,15 @@ var jsValidate = require('gulp-jsvalidate');
  * Тут нужно указать активную директорию
  */
 var shop = 'shop1';
+
+process.argv.forEach((val, index) => {
+  // Проверка параметра с активным магазином в консоли
+  if (~val.indexOf('site=')) {
+    var shopFolder = val.split('=')[1];
+    var stat = fs.statSync(shopFolder);
+    if(stat.isDirectory()) shop = shopFolder;
+  }
+});
 
 /**
  * Настройки поумолчанию

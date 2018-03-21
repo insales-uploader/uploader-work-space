@@ -26,4 +26,10 @@
 
 `uploader download stream` - запустит методы `download stream`
 
+> Указать активную директорию можно через параметр в консоли `site=<имяДиректории>`.
+> Имя директории не должно содержать пробелов!
+
+`uploader start site=shop2` - запустит метод `start` с активной директорией `shop2`
+
+
 ![InSales](https://cdn.rawgit.com/insales/insales-uploader/master/insales.png)
