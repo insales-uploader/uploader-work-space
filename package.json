@@ -6,7 +6,6 @@
   "dependencies": {
     "deepmix": "^1.0.0",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-csstree": "^1.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-jsvalidate": "^4.0.0"
   },
