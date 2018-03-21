@@ -1,4 +1,4 @@
-# Организация директорий для работы с insales-uploader
+# Рабочий проект для insales-uploader
 
 > [insales <> uploader](https://github.com/insales/insales-uploader)
 
