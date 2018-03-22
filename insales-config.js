@@ -1,7 +1,7 @@
 var extend = require('deepmix')
 var fs = require('fs')
 var imagemin = require('gulp-imagemin')
-var postcss = require('gulp-postcss')
+var autoprefixer = require('insales-uploader-autoprefixer')
 var jsValidate = require('gulp-jsvalidate');
 
 /**
@@ -41,8 +41,9 @@ var defaultConfig = {
     // gulp плагины для стилей
     style: function(stream) {
         return stream
-          .pipe(postcss().on('error',  function (err) {
-            console.log(err.message)
+          .pipe(autoprefixer({
+            browsers: ['last 10 versions'],
+            cascade: true
           }))
     },
     // gulp плагины для скриптов
